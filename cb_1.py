@@ -1,23 +1,13 @@
-# def front_back(str):
-#     if len(str) <= 1:
-#         return str
-#
-#     first = str[0]
-#     last = str[-1]
-#     middle = str[1:-1]
-#     total = last + middle + first
-#
-#     # last + mid + first
-#     return total
-
-
-def not_string(str):
-    if 'is not' in str:
-        word = 'not' + ' ' + str
-        return word
-    elif 'not' in str:
-        # word = 'not' + ' ' + str
+def front_back(str):
+    if len(str) <= 1:
         return str
-    else:
-        word = 'not' + ' ' + str
-        return word
+
+    first = str[0]
+    last = str[-1]
+    middle = str[1:-1]
+    total = last + middle + first
+
+    # last + mid + first
+    return total
+
+
