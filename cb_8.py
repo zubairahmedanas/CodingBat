@@ -1,15 +1,17 @@
-def merge(nums1, m, nums2, n):
-	# while m > 0 and n > 0:
-	if nums1[m-1] < nums2[n-1]:
-		nums1[m+n-1] = nums2[n-1]
-	m = m-1
-	n= n-1
-	print(nums1) 
-		# else:
-  #   		pass
+def end_other(a, b):
+	lower_str = a.lower()
+	print("the lower str is", lower_str, len(lower_str))
 
-nums1=[1,2,3,0,0,0]
-m=3
-nums2=[4,5,6]
-n=3
-merge(nums1, m, nums2, n)
+
+	higher_str = b.lower()
+	print("the higher str is", len(higher_str), higher_str)
+
+	if len(b)> len(a):
+		higher_str= a.lower()
+		lower_str = b.lower()
+
+	if higher_str== lower_str[len(lower_str)-len(higher_str):len(lower_str)]:
+		return True
+	return False
+
+print(end_other('abc', 'hiabc'))
